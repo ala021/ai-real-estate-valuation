@@ -57,3 +57,54 @@ real-estate-valuation-platform/
 │   └── public/
 │
 └── housing_data.csv       # Generated Dataset
+
+⚡ How to Run Locally
+1. Backend Setup (The AI Engine)
+Navigate to the backend folder and install dependencies:
+
+Bash
+
+cd backend
+pip install -r requirements.txt
+
+
+Step A: Generate Data Create the synthetic dataset using statistical distributions:
+
+Bash
+
+python scripts/generate_data.py
+Step B: Train the Model Train the Neural Network. This will save the model weights to ml_engine/models/:
+
+Bash
+
+python ml_engine/training.py
+Step C: Start the API Launch the FastAPI server:
+
+Bash
+
+uvicorn app.main:app --reload --port 8001
+The API will be live at: http://127.0.0.1:8001/docs
+
+2. Frontend Setup (The User Interface)
+Open a new terminal (keep the backend running) and navigate to the frontend:
+
+Bash
+
+cd frontend
+npm install
+npm start
+The App will open automatically at: http://localhost:3000
+📸 Screenshots
+1. AI Prediction Interface
+(Add your screenshot.png to the folder and uncomment the line below)
+
+2. API Documentation (Swagger UI)
+Automatic documentation provided by FastAPI.
+
+🔮 Future Improvements
+Dockerization: Containerize the application for cloud deployment.
+
+Database: Migrate from CSV to PostgreSQL.
+
+CI/CD: Automate testing pipelines with GitHub Actions.
+

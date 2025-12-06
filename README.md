@@ -112,10 +112,10 @@ npm start
 The App will open automatically at: http://localhost:3000
 
 ### 1. AI Prediction Interface
-![View Screenshot](screenshot.png)
+![View Screenshot](Screenshot.png)
 
 ### 2. API Documentation (Swagger UI)
-![View Screenshot](screenshot2.png)
+![View Screenshot](Screenshot2.png)
 
 
 🔮 Future Improvements

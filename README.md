@@ -112,10 +112,12 @@ npm start
 The App will open automatically at: http://localhost:3000
 
 1. AI Prediction Interface
-Screenshot 2025-12-04 at 00.01.33.png
+[View Screenshot](./Screenshot.png)
+
 
 2. API Documentation (Swagger UI)
-Screenshot 2025-12-04 at 00.29.04.png
+[View Screenshot](./Screenshot2.png)
+
 
 🔮 Future Improvements
 Database: Migrate from CSV to PostgreSQL.

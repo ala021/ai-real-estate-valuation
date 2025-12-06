@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  backend:
+    build: ./backend
+    container_name: real-estate-backend
+    ports:
+      - "8001:8001"
+    volumes:
+      - ./backend:/app # Syncs code changes instantly
+    environment:
+      - PORT=8001
+
+  frontend:
+    build: ./frontend
+    container_name: real-estate-frontend
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    stdin_open: true # Fix for React exit bug
+    tty: true
+    depends_on:
+      - backend # Wait for backend to start first

@@ -12,6 +12,7 @@
 **Live Demo:** [Add link here if you deploy later]
 
 ## 📋 Overview
+
 This project is a full-stack AI application designed to predict real estate property values with high precision. Unlike simple notebook experiments, this is a production-ready system that integrates a **Deep Learning** regression model into a scalable **Microservices Architecture**.
 
 It demonstrates a complete data pipeline: from raw data generation (Numpy) to model training (PyTorch), API deployment (FastAPI), and user interaction (React).
@@ -21,24 +22,28 @@ It demonstrates a complete data pipeline: from raw data generation (Numpy) to mo
 ## 🛠️ Tech Stack
 
 ### 🧠 Artificial Intelligence & Data Science
-* **Deep Learning:** PyTorch (Custom `nn.Module` Architecture).
-* **Data Processing:** Pandas, Numpy (Advanced Statistical Distributions).
-* **Model Serialization:** Joblib & State Dicts for inference.
-* **Metrics:** R2 Score Validation.
+
+- **Deep Learning:** PyTorch (Custom `nn.Module` Architecture).
+- **Data Processing:** Pandas, Numpy (Advanced Statistical Distributions).
+- **Model Serialization:** Joblib & State Dicts for inference.
+- **Metrics:** R2 Score Validation.
 
 ### ⚙️ Backend Engineering
-* **Framework:** FastAPI (Asynchronous REST API).
-* **Validation:** Pydantic Models for strict type checking.
-* **Architecture:** Modular MVC pattern (Separation of Concerns).
+
+- **Framework:** FastAPI (Asynchronous REST API).
+- **Validation:** Pydantic Models for strict type checking.
+- **Architecture:** Modular MVC pattern (Separation of Concerns).
 
 ### 💻 Frontend Development
-* **Framework:** React.js (Hooks & State Management).
-* **Styling:** CSS3 & Responsive Design.
-* **Connectivity:** Fetch API for real-time inference.
+
+- **Framework:** React.js (Hooks & State Management).
+- **Styling:** CSS3 & Responsive Design.
+- **Connectivity:** Fetch API for real-time inference.
 
 ### 🐳 DevOps & MLOps
-* **Containerization:** Docker & Docker Compose.
-* **Version Control:** Git & GitHub.
+
+- **Containerization:** Docker & Docker Compose.
+- **Version Control:** Git & GitHub.
 
 ---
 
@@ -112,10 +117,10 @@ npm start
 The App will open automatically at: http://localhost:3000
 
 ### 1. AI Prediction Interface
-![View Screenshot](Screenshot.png)
+[Click to View Frontend Screenshot](./frontend.png)
 
 ### 2. API Documentation (Swagger UI)
-![View Screenshot](Screenshot2.png)
+[Click to View Backend Screenshot](./backend.png)
 
 
 🔮 Future Improvements
